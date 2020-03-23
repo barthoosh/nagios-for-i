@@ -208,6 +208,9 @@ public class Message implements Action {
                     // Retrieve message type
                     type = pcml.getStringValue("qgyolmsg.lstm0100.msgEntry.msgType", index).trim();
 
+                    // Retrieve message severity
+                    severity=pcml.getIntValue("qgyolmsg.lstm0100.msgEntry.msgSeverity", index);
+                    
                     // Retrieve sent time
                     strTime = pcml.getStringValue("qgyolmsg.lstm0100.msgEntry.timeSent", index);
 
